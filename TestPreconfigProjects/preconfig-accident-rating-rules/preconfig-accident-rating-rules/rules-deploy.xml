@@ -1,0 +1,11 @@
+<rules-deploy>
+    <isProvideRuntimeContext>true</isProvideRuntimeContext>
+    <isProvideVariations>false</isProvideVariations>
+    <serviceName>preconfig-accident-rating-rules</serviceName>
+    <interceptingTemplateClassName>com.exigen.ipb.policy.preconfig.accident.rating.rules.RatingService</interceptingTemplateClassName>
+    <url>accident</url>
+    <publishers>
+        <publisher>RESTFUL</publisher>
+    </publishers>
+</rules-deploy>
+
