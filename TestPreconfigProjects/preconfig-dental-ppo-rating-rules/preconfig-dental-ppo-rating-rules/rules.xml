@@ -1,0 +1,20 @@
+<project>
+    <!-- Project name. -->
+    <name>preconfig-dental-ppo-rating-rules</name>
+
+    <!-- OpenL project includes one or more modules.  -->
+    <modules>
+        <module>
+            <name>Individual Dental PPO Rater</name>
+            <rules-root path="rules/Dental-PPO-*.xlsx"/>
+        </module>
+    </modules>
+
+    <properties-file-name-pattern>%lob%-%state%-%effectiveDate:MMddyyyy%-%startRequestDate:MMddyyyy%</properties-file-name-pattern>
+    <properties-file-name-processor>org.openl.rules.project.resolving.CWPropertyFileNameProcessor</properties-file-name-processor>
+
+    <!-- Project's classpath. -->
+    <classpath>
+        <entry path="lib/*.jar"/>
+    </classpath>
+</project>

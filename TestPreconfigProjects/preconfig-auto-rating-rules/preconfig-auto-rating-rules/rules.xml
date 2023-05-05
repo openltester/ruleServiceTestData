@@ -1,0 +1,24 @@
+<project>
+    <!-- Project name. -->
+    <name>preconfig-auto-rating-rules</name>
+
+    <!-- OpenL project includes one or more modules.  -->
+    <modules>
+        <module>
+            <rules-root path="rules/*.xlsx"/>
+            <method-filter>
+                <includes>
+                    <value>.+ DeterminePolicyPremium\(.+\)</value>
+                </includes>
+            </method-filter>
+        </module>
+    </modules>
+
+    <properties-file-name-pattern>.*-%state%-%effectiveDate:ddMMyyyy%-%startRequestDate:ddMMyyyy%</properties-file-name-pattern>
+    <properties-file-name-processor>org.openl.rules.project.resolving.CWPropertyFileNameProcessor</properties-file-name-processor>
+
+    <!-- Project's classpath. -->
+    <classpath>
+        <entry path="lib/*.jar"/>
+    </classpath>
+</project>

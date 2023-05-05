@@ -1,0 +1,24 @@
+<project>
+    <!-- Project name. -->
+    <name>preconfig-policy-commercial-rating-rules</name>
+
+    <!-- OpenL project includes one or more modules.  -->
+    <modules>
+        <module>
+            <name>Property-datatypes</name>
+            <rules-root path="rules/Property-datatypes.xlsx"/>
+        </module>
+        <module>
+            <name>CL-PROPERTY</name>
+            <rules-root path="rules/CL-PROPERTY-*.xlsx"/>
+        </module>
+    </modules>
+
+    <properties-file-name-pattern>CL-PROPERTY-%state%-%effectiveDate:MMddyyyy%-%startRequestDate:MMddyyyy%</properties-file-name-pattern>
+    <properties-file-name-processor>org.openl.rules.project.resolving.CWPropertyFileNameProcessor</properties-file-name-processor>
+
+    <!-- Project's classpath. -->
+    <classpath>
+        <entry path="lib/*.jar"/>
+    </classpath>
+</project>

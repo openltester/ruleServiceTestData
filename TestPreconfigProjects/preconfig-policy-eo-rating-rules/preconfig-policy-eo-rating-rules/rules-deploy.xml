@@ -1,0 +1,11 @@
+<rules-deploy>
+    <isProvideRuntimeContext>true</isProvideRuntimeContext>
+    <isProvideVariations>false</isProvideVariations>
+    <serviceName>preconfig-policy-eo-rating-rules</serviceName>
+    <interceptingTemplateClassName>com.exigen.ipb.policy.preconfig.eo.rating.rules.RatingService</interceptingTemplateClassName>
+
+    <url>eo</url>
+    <publishers>
+        <publisher>RESTFUL</publisher>
+    </publishers>
+</rules-deploy>

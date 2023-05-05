@@ -1,0 +1,25 @@
+<project>
+    <!-- Project name. -->
+    <name>preconfig-policy-cyber-rating-rules</name>
+
+    <!-- OpenL project includes one or more modules.  -->
+    <modules>
+        <module>
+            <name>CL-CYBER</name>
+            <rules-root path="rules/CYBER-*.xlsx"/>
+            <method-filter>
+                <includes>
+                    <value>.* DeterminePolicyPremium\(.*</value>
+                </includes>
+            </method-filter>
+        </module>
+    </modules>
+	
+	<properties-file-name-pattern>%lob%-%state%-%effectiveDate:MMddyyyy%-%startRequestDate:MMddyyyy%</properties-file-name-pattern>
+    <properties-file-name-processor>org.openl.rules.project.resolving.CWPropertyFileNameProcessor</properties-file-name-processor>
+
+    <!-- Project's classpath. -->
+    <classpath>
+        <entry path="lib/*.jar"/>
+    </classpath>
+</project>

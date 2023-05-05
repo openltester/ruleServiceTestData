@@ -1,0 +1,20 @@
+<project>
+  <name>preconfig-critical-illness-uwr-decision-rules</name>
+  <comment></comment>
+  <modules>
+    <module>
+      <rules-root path="rules/*.xlsx"/>
+    </module>
+    <module>
+      <name>UW Test</name>
+      <rules-root path="rules/UW Test.xlsx"/>
+    </module>
+  </modules>
+  <properties-file-name-pattern>%lob%-%state%-%effectiveDate:MMddyyyy%-%startRequestDate:MMddyyyy%</properties-file-name-pattern>
+  <properties-file-name-processor>org.openl.rules.project.resolving.CWPropertyFileNameProcessor</properties-file-name-processor>
+  
+      <!-- Project's classpath. -->
+    <classpath>
+        <entry path="lib/*.jar"/>
+    </classpath>
+</project>

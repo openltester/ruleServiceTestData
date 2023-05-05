@@ -1,0 +1,12 @@
+<rules-deploy>
+    <isProvideRuntimeContext>true</isProvideRuntimeContext>
+    <isProvideVariations>true</isProvideVariations>
+    <serviceName>preconfig-policy-commercial-auto-rating-rules</serviceName>
+    <!-- STATIC INTERFACE -->
+    <interceptingTemplateClassName>com.exigen.ipb.policy.preconfig.rating.cl.auto.RatingService</interceptingTemplateClassName>
+    <!-- //STATIC INTERFACE -->
+    <url>auto-cl</url>
+    <publishers>
+        <publisher>RESTFUL</publisher>
+    </publishers>
+</rules-deploy>

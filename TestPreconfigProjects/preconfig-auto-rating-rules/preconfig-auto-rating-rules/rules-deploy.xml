@@ -1,0 +1,18 @@
+<rules-deploy>
+    <isProvideRuntimeContext>false</isProvideRuntimeContext>
+    <isProvideVariations>false</isProvideVariations>
+    <serviceName>preconfig-rating-auto</serviceName>
+    <!-- STATIC INTERFACE -->
+    <serviceClass>com.exigen.ipb.policy.preconfig.rating.auto.RatingService</serviceClass>
+    <!-- //STATIC INTERFACE -->
+    <url>auto</url>
+    <publishers>
+        <publisher>RESTFUL</publisher>
+    </publishers>
+    <configuration>
+        <entry>
+            <string>rootClassNamesBinding</string>
+            <string>com.exigen.ipb.policy.preconfig.rating.auto.result.PreconfigSimpleStep</string>
+        </entry>
+    </configuration>
+</rules-deploy>

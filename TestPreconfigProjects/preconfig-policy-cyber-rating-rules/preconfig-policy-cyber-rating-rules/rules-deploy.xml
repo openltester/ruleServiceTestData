@@ -1,0 +1,10 @@
+<rules-deploy>
+    <isProvideRuntimeContext>true</isProvideRuntimeContext>
+    <isProvideVariations>false</isProvideVariations>
+    <serviceName>preconfig-policy-cyber-rating-rules</serviceName>
+    <interceptingTemplateClassName>com.exigen.ipb.policy.preconfig.cyber.rating.rules.RatingService</interceptingTemplateClassName>
+    <url>cyber</url>
+    <publishers>
+        <publisher>RESTFUL</publisher>
+    </publishers>
+</rules-deploy>

@@ -1,0 +1,9 @@
+<rules-deploy>
+  <isProvideRuntimeContext>true</isProvideRuntimeContext>
+  <isProvideVariations>false</isProvideVariations>
+  <serviceName>preconfig-critical-illness-uwr-decision-rules</serviceName>
+  <url>uw-questionnaire</url>
+  <publishers>
+    <publisher>RESTFUL</publisher>
+  </publishers>
+</rules-deploy>

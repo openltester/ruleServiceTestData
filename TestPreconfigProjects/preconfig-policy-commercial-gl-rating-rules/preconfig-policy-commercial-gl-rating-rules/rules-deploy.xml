@@ -1,0 +1,12 @@
+<rules-deploy>
+    <isProvideRuntimeContext>true</isProvideRuntimeContext>
+    <isProvideVariations>true</isProvideVariations>
+    <serviceName>preconfig-policy-commercial-gl-rating-rules</serviceName>
+    <!-- STATIC INTERFACE -->
+    <interceptingTemplateClassName>com.exigen.ipb.policy.preconfig.rating.cl.gl.RatingService</interceptingTemplateClassName>
+    <!-- //STATIC INTERFACE -->
+    <url>gl-cl</url>
+    <publishers>
+        <publisher>RESTFUL</publisher>
+    </publishers>
+</rules-deploy>

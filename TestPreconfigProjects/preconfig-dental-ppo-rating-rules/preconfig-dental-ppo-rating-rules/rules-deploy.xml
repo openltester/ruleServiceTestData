@@ -1,0 +1,12 @@
+<rules-deploy>
+    <isProvideRuntimeContext>true</isProvideRuntimeContext>
+    <isProvideVariations>false</isProvideVariations>
+    <serviceName>preconfig-dental-ppo-rating-rules</serviceName>
+
+    <interceptingTemplateClassName>com.exigen.ipb.policy.preconfig.dental.ppo.rating.rules.RatingService</interceptingTemplateClassName>
+
+    <url>dental-ppo</url>
+    <publishers>
+        <publisher>RESTFUL</publisher>
+    </publishers>
+</rules-deploy>

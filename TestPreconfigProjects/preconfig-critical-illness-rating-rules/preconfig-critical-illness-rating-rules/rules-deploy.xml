@@ -1,0 +1,10 @@
+<rules-deploy>
+    <isProvideRuntimeContext>true</isProvideRuntimeContext>
+    <isProvideVariations>false</isProvideVariations>
+    <serviceName>preconfig-critical-illness-rating-rules</serviceName>
+    <interceptingTemplateClassName>com.exigen.ipb.policy.preconfig.illness.rating.rules.RatingService</interceptingTemplateClassName>
+    <url>illness</url>
+    <publishers>
+        <publisher>RESTFUL</publisher>
+    </publishers>
+</rules-deploy>

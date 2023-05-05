@@ -1,0 +1,21 @@
+<rules-deploy>
+    <isProvideRuntimeContext>true</isProvideRuntimeContext>
+    <isProvideVariations>true</isProvideVariations>
+    <serviceName>preconfig-home-rating-rules</serviceName>
+    <!-- STATIC INTERFACE -->
+    <serviceClass>com.exigen.ipb.policy.preconfig.rating.home.RatingService</serviceClass>
+    <!-- //STATIC INTERFACE -->
+    <url>home</url>
+    <publishers>
+        <publisher>RESTFUL</publisher>
+    </publishers>
+    <configuration>
+        <entry>
+            <string>rootClassNamesBinding</string>
+            <string>
+                org.openl.rules.context.DefaultRulesRuntimeContext,
+                com.exigen.ipb.policy.preconfig.rating.home.result.PrecofngiSimpleStep
+            </string>
+        </entry>
+    </configuration>
+</rules-deploy>

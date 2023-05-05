@@ -1,0 +1,17 @@
+<project>
+    <!-- Project name. -->
+    <name>preconfig-policy-commercial-auto-rating-rules</name>
+
+    <!-- OpenL project includes one or more modules.  -->
+    <modules>
+        <module>
+            <name>CL-AUTO</name>
+            <rules-root path="rules/CL-AUTO-*.xlsx"/>
+        </module>
+    </modules>
+
+    <!-- Project's classpath. -->
+    <classpath>
+        <entry path="lib/*.jar"/>
+    </classpath>
+</project>
