@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Build-Date: 2023-01-10T20:47:01Z
+Built-By: eisci
+Implementation-Title: com.exigen.ipb.policy.preconfig:preconfig-critical
+ -illness-rating-rules
+Implementation-Version: 12.35-RC1
+Implementation-Vendor: EIS Group Properties, Ltd
+Created-By: OpenL Maven Plugin v5.26.3
+Build-Number: 
+Build-SCM-Revision: 
+
